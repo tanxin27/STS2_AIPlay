@@ -1,0 +1,183 @@
+{
+  "description": "参考流派库 - 这些是社区验证过的强力流派，供AI参考学习。注意：这只是参考，不是必须遵循的规则。",
+  "archetypes": [
+    {
+      "id": "ref_poison_classic",
+      "name": "经典毒流 (Classic Poison)",
+      "source": "community",
+      "tier": "S",
+      "keyCards": {
+        "mustHave": ["Catalyst", "Noxious Fumes"],
+        "niceToHave": ["Poisoned Stab", "Bane", "Deadly Poison", "Envenom"],
+        "support": ["Backflip", "Prepared", "Acrobatics", "Dodge and Roll"]
+      },
+      "relics": {
+        "dream": ["Snecko Skull", "The Specimen", "Paper Krane"],
+        "good": ["Torii", "Ornamental Fan", "Anchor"]
+      },
+      "strategy": {
+        "early": "优先找Noxious Fumes或Poisoned Stab开始叠毒",
+        "mid": "寻找Catalyst作为终结技，补充过牌和防御",
+        "late": "删去Strike，确保防御足够支撑毒的回合"
+      },
+      "notes": "经典稳定流派，适合新手。毒无视格挡，对付高防御敌人有优势。"
+    },
+    {
+      "id": "ref_shiv",
+      "name": "刀流 (Shiv)",
+      "source": "community",
+      "tier": "A",
+      "keyCards": {
+        "mustHave": ["Blade Dance", "Accuracy"],
+        "niceToHave": ["Infinite Blades", "Storm of Steel", "Cloak and Dagger"],
+        "support": ["Backflip", "Acrobatics", "Prepared", "Escape Plan"]
+      },
+      "relics": {
+        "dream": ["Shuriken", "Kunai", "Paper Crane"],
+        "good": ["Ornamental Fan", "Nunchaku", "Pen Nib"]
+      },
+      "strategy": {
+        "early": "Accuracy是第一优先级，看到必拿",
+        "mid": "补充过牌，确保每回合能生成小刀",
+        "late": "寻找Storm of Steel或Choke作为终结"
+      },
+      "notes": "需要大量过牌支持，小刀会塞满手牌。对多段攻击的敌人效果好。"
+    },
+    {
+      "id": "ref_discard",
+      "name": "弃牌流 (Discard)",
+      "source": "community",
+      "tier": "A",
+      "keyCards": {
+        "mustHave": ["Tactician", "Reflex", "Concentrate"],
+        "niceToHave": ["Eviscerate", "Tools of the Trade", "Prepared"],
+        "support": ["Acrobatics", "Backflip", "Escape Plan", "Dagger Throw"]
+      },
+      "relics": {
+        "dream": ["Tingsha", "Tough Bandages", "Gambling Chip"],
+        "good": ["Bag of Preparation", "Anchor"]
+      },
+      "strategy": {
+        "early": "Tactician和Reflex是核心回费手段",
+        "mid": "寻找Eviscerate作为主要输出",
+        "late": "精简卡组，避免卡手"
+      },
+      "notes": "通过弃牌触发回费抽牌，形成循环。需要精确的手牌管理。"
+    },
+    {
+      "id": "ref_infinite",
+      "name": "无限流 (Infinite)",
+      "source": "community",
+      "tier": "S+",
+      "keyCards": {
+        "mustHave": ["Dropkick", "Heel Hook"],
+        "niceToHave": ["Flash of Steel", "Tactician", "Reflex"],
+        "support": ["Concentrate", "Prepared", "Acrobatics"]
+      },
+      "relics": {
+        "dream": ["Unceasing Top", "Pen Nib", "Nunchaku"],
+        "good": ["Bag of Preparation", "Gambling Chip"]
+      },
+      "strategy": {
+        "early": "精简卡组到10张以下",
+        "mid": "确保有足够的抽牌和回费",
+        "late": "删除所有不必要的牌"
+      },
+      "notes": "高难度流派，需要严格的卡组控制。一旦成型几乎无敌。"
+    },
+    {
+      "id": "ref_general",
+      "name": "通用/无流派 (General)",
+      "source": "dev",
+      "tier": "B",
+      "keyCards": {
+        "mustHave": [],
+        "niceToHave": ["Backflip", "Acrobatics", "Footwork", "Dagger Spray"],
+        "support": ["Prepared", "Escape Plan", "Dodge and Roll"]
+      },
+      "relics": {
+        "dream": ["Anchor", "Bag of Preparation", "Horn Cleat"],
+        "good": ["Ornamental Fan", "Vajra"]
+      },
+      "strategy": {
+        "early": "拿高质量单卡，不挑流派",
+        "mid": "根据拿到的牌决定方向",
+        "late": "补齐缺失的功能（AOE/防御/终结）"
+      },
+      "notes": "没有明确流派时的选择。灵活但上限较低。"
+    }
+  ],
+  "cardNotes": {
+    "Catalyst": "毒流终结技，看到必拿（如果你走毒）。升级后质变，0费翻倍毒层。",
+    "Noxious Fumes": "毒流核心，每回合自动叠毒。没有它毒流也能玩，但有它更稳定。",
+    "Envenom": "毒流可用，刀流也能用（小刀叠毒）。跨流派的好牌。",
+    "Blade Dance": "刀流核心，但毒流缺AOE时也能拿1-2张当清场。",
+    "Accuracy": "刀流第一优先级，小刀伤害翻倍。没有它刀流很弱。",
+    "Backflip": "万能牌，几乎所有卡组都能拿。防御+过牌永远不嫌多。",
+    "Acrobatics": "过牌核心，但会弃牌需要注意手牌管理。",
+    "Prepared": "配合弃牌效果用，单独使用效果一般。",
+    "Footwork": "防御核心，每层敏捷+2格挡，叠加收益高。",
+    "Bane": "毒流输出牌，敌人有毒时伤害翻倍。前期可用，后期略弱。",
+    "Deadly Poison": "快速叠毒，但消耗大。配合Envenom效果好。",
+    "Dagger Spray": "AOE清场，第一幕神器。后期也能处理小怪。",
+    "Piercing Wail": "神卡，全体虚弱+伤害。对付多段攻击Boss有奇效。",
+    "Malaise": "Boss杀手，消耗所有能量施加虚弱和易伤。升级后0费起手。",
+    "Leg Sweep": "防御+虚弱，攻守兼备的高质量牌。",
+    "Cloak and Dagger": "小刀+格挡，刀流可用，通用卡组也能拿。",
+    "Escape Plan": "抽牌+格挡，如果抽到技能还能再抽。过牌流组件。",
+    "Dagger Throw": "伤害+抽牌+弃牌，弃牌流组件。",
+    "Tactician": "弃牌流核心，弃牌回费。",
+    "Reflex": "弃牌流核心，不能打出时抽牌。",
+    "Concentrate": "弃牌流组件，弃3抽2回费。",
+    "Eviscerate": "弃牌流终结技，每弃一张牌伤害+1。",
+    "Tools of the Trade": "每回合开始抽1弃1，弃牌流神器。",
+    "Dropkick": "无限流核心，敌人虚弱时回费抽牌。",
+    "Heel Hook": "无限流组件，敌人虚弱时回费抽牌。",
+    "Flash of Steel": "无限流组件，0费抽牌。",
+    "Choke": "终结技，每出一张牌伤害+1。配合小刀效果好。",
+    "Storm of Steel": "刀流终结技，所有手牌变成小刀。",
+    "Infinite Blades": "每回合开始增加小刀，刀流核心。",
+    "Sneaky Strike": "敌人身上有Debuff时0费，条件好用。",
+    "Skewer": "消耗所有能量造成多段伤害，配合小刀/力量效果好。",
+    "All-Out Attack": "AOE+弃牌，伤害很高但会弃牌需注意。",
+    "Terror": "给敌人易伤，配合高伤害牌效果好。",
+    "Ghostly Armor": "ethereal防御牌，不能被打出但会保留。",
+    "Blur": "格挡不会在下回合消失，防御流组件。",
+    "Calculated Gamble": "弃掉所有手牌抽同样数量，弃牌流神器。",
+    "Finesse": "0费抽牌+格挡，万能牌。",
+    "Just Lucky": "scry+格挡+伤害，万能牌。",
+    "Panic Button": "获得大量格挡但下回合不能格挡，救急用。",
+    "Forethought": "把牌放到抽牌堆底，下回合0费打出。",
+    "Madness": "随机一张牌本回合0费，有惊喜也可能坑。",
+    "Purity": "从手牌移除牌，精简卡组用。",
+    "Violence": "从抽牌堆加入3张攻击到手牌，配合终结技。",
+    "A Thousand Cuts": "每出一张牌对所有敌人造成1伤害，小刀流神器。",
+    "After Image": "每出一张牌获得1格挡，防御流组件。",
+    "Bullet Time": "本回合所有手牌0费但不能抽牌，终结技。",
+    "Corpse Explosion": "敌人死亡时对全体造成伤害，毒流配合好。",
+    "Finisher": "本回合每出一张攻击造成伤害，终结技。",
+    "Glass Knife": "高伤害但会降低伤害，前期强力。",
+    "Grand Finale": "如果抽牌堆为空造成大量伤害，特殊条件。",
+    "Phantasmal Killer": "下回合攻击双倍，终结技准备。",
+    "Riddle With Holes": "多段伤害，配合Envenom/力量效果好。",
+    "Unload": "造成伤害并丢弃所有非攻击牌，注意手牌管理。",
+    "Alchemize": "获得随机药水，灵活性高。",
+    "Crippling Poison": "施加毒和虚弱，控制和输出兼备。",
+    "Distraction": "获得随机技能，赌博牌。",
+    "Endless Agony": "不能被打出，自动对随机敌人造成伤害。",
+    "Night Terror": "给敌人噩梦，敌人醒来时受到伤害。",
+    "Adrenaline": "获得能量和抽牌，万能牌。",
+    "Die Die Die": "AOE伤害，第一幕强力。",
+    "Doppelganger": "下回合复制你的手牌，combo牌。",
+    "Nightmare": "复制一张牌3次加入手牌，复制关键牌。",
+    "Burst": "下一张技能打出两次，combo牌。",
+    "Dash": "攻击+防御，高质量牌。",
+    "Predator": "高伤害+抽牌，高质量攻击。",
+    "Slice": "小刀流基础牌。",
+    "Sucker Punch": "伤害+虚弱，攻守兼备。",
+    "Flying Knee": "伤害+下回合能量，节奏牌。",
+    "Poisoned Stab": "伤害+叠毒，毒流前期核心。",
+    "Quick Slash": "伤害+抽牌。",
+    "Neutralize": "基础牌，伤害+虚弱，前期好用。"
+  }
+}

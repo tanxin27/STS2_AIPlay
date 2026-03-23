@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "description": "TokenSpire2 动态策略配置 - 调整 HP 阈值和风险偏好",
+  
+  "hpThresholds": {
+    "safe": 80,
+    "caution": 50,
+    "danger": 30,
+    "critical": 25
+  },
+  
+  "riskTolerance": {
+    "description": "整体风险偏好: conservative(保守) / balanced(平衡) / aggressive(激进)",
+    "mode": "conservative",
+    
+    "conservativeModifiers": {
+      "eliteAvoidBelowHp": 70,
+      "restPriorityBelowHp": 60,
+      "maxDistanceToRestWhenLowHp": 2
+    },
+    
+    "aggressiveModifiers": {
+      "eliteAvoidBelowHp": 40,
+      "restPriorityBelowHp": 30,
+      "maxDistanceToRestWhenLowHp": 4
+    }
+  },
+  
+  "actSpecific": {
+    "act1": {
+      "maxElites": 2,
+      "canTakeRisks": true
+    },
+    "act2": {
+      "maxElites": 1,
+      "requireRestBeforeBoss": true
+    },
+    "act3": {
+      "maxElites": 1,
+      "requireFullHpForBoss": true
+    }
+  },
+  
+  "combatWarnings": {
+    "showCriticalWarningBelow": 25,
+    "showDangerWarningBelow": 40,
+    "showCautionWarningBelow": 60
+  },
+  
+  "roomRecommendations": {
+    "criticalHp": {
+      "elite": "❌ ABSOLUTELY AVOID - You will die!",
+      "monster": "⚠️ Risky - Only if no other option",
+      "rest": "✅ TOP PRIORITY - Heal immediately",
+      "shop": "✅ Safe - Buy potions/defense",
+      "event": "🎲 Gamble - Might heal or hurt"
+    },
+    "dangerHp": {
+      "elite": "❌ HIGH RISK - Avoid unless desperate",
+      "monster": "⚠️ Caution - Ensure quick victory",
+      "rest": "✅ PRIORITY - You need healing",
+      "shop": "✅ Good - Buy survival items",
+      "event": "❓ Risky at low HP"
+    },
+    "cautionHp": {
+      "elite": "⚠️ Careful - Only if deck is strong",
+      "monster": "✓ Standard - Play normally",
+      "rest": "💛 Consider - Heal if hurting",
+      "shop": "✓ Standard - Buy as needed",
+      "event": "✓ Okay - Evaluate carefully"
+    },
+    "safeHp": {
+      "elite": "✓ Can take - Ensure you can survive",
+      "monster": "✓ Standard - Free gold/cards",
+      "rest": "✓ Optional - Consider upgrading",
+      "shop": "✓ Standard - Buy good items",
+      "event": "✓ Okay - Usually beneficial"
+    }
+  }
+}

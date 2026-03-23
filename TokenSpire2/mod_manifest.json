@@ -1,0 +1,7 @@
+{
+  "pck_name": "TokenSpire2",
+  "name": "TokenSpire2",
+  "author": "collinzrj",
+  "description": "LLM-powered autonomous agent that plays Slay the Spire 2. Supports Claude, GPT, DeepSeek and more via OpenRouter.",
+  "version": "v0.1.0"
+}

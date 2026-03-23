@@ -1,0 +1,33 @@
+# Build outputs
+build/
+bin/
+obj/
+
+# Godot
+.godot/
+*.tmp
+
+# NuGet packages (can be restored)
+packages/
+
+# Release packages (stored separately)
+Releases/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Game logs and runtime data
+gameplay_log/
+memories/
+*.memory
+*.md.tmp
